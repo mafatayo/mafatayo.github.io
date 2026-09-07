@@ -1,0 +1,82 @@
+<title>Michael Akorede Fatayo</title>
+<style>
+  :root{
+    --paper:#ffffff; --ink:#111111; --ink-soft:#444444; --link:#0645AD; --line:#dddddd;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#111111; --ink:#e8e8e8; --ink-soft:#aaaaaa; --link:#7aa2f7; --line:#333333;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#111111; --ink:#e8e8e8; --ink-soft:#aaaaaa; --link:#7aa2f7; --line:#333333;
+  }
+  *{box-sizing:border-box;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:16px; line-height:1.6; margin:0;
+  }
+  .wrap{ max-width:640px; margin:0 auto; padding:56px 20px 80px; }
+  h1{
+    font-family:ui-monospace,Menlo,Consolas,monospace;
+    font-size:1.3rem; margin:0 0 6px; font-weight:600;
+  }
+  .role{
+    font-family:ui-monospace,Menlo,Consolas,monospace;
+    color:var(--ink-soft); margin:0 0 18px; font-size:.85rem;
+  }
+  p{ margin:0 0 14px; }
+  a{ color:var(--link); }
+  h2{
+    font-family:ui-monospace,Menlo,Consolas,monospace;
+    font-size:.85rem; text-transform:uppercase; letter-spacing:.04em;
+    margin:34px 0 10px; font-weight:600; color:var(--ink-soft);
+  }
+  ul{ margin:0 0 14px; padding-left:20px; }
+  li{ margin-bottom:10px; }
+  .venue{ color:var(--ink-soft); font-size:.9rem; font-family:ui-monospace,Menlo,Consolas,monospace; }
+  .links{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.9rem; }
+  .links a{ margin-right: 4px; }
+  footer{
+    margin-top:48px; color:var(--ink-soft); font-size:.8rem;
+    font-family:ui-monospace,Menlo,Consolas,monospace;
+  }
+</style>
+
+<div class="wrap">
+  <h1>Michael Akorede Fatayo</h1>
+  <p class="role">MSc Candidate, Computer Science, Lead City University, Ibadan, Nigeria</p>
+
+  <p class="links">
+    <a href="cv.pdf">CV</a> /
+    <a href="mailto:mafatayo@gmail.com">Email</a> /
+    <a href="https://orcid.org/0009-0003-1229-7390">ORCID</a> /
+    <a href="https://scholar.google.com/citations?user=mITv0gcAAAAJ&hl=en">Google Scholar</a> /
+    <a href="https://github.com/mafatayo">GitHub</a> /
+    <a href="https://linkedin.com/in/mafatayo">LinkedIn</a>
+  </p>
+
+  <p>I work on real-time machine learning systems for financial fraud detection, with a focus on evaluation protocols that hold up once a model has to run in production: causally-correct features, temporal (not random) train/test splits, and ablations that separate genuine signal from artifacts of the benchmark itself.</p>
+
+  <p>My MSc thesis, FraudShield, builds a streaming fraud-detection architecture (Kafka, Spark Streaming, Redis, XGBoost) evaluated on the full 6.3M-transaction PaySim dataset, including a feature-group ablation that identifies how much of its near-perfect accuracy is genuine learned signal versus an artifact of the dataset.</p>
+
+  <p>Research interests: real-time ML systems, fraud and anomaly detection, imbalanced classification, causal feature engineering, streaming architectures.</p>
+
+  <h2>Papers</h2>
+  <ul>
+    <li>
+      "FraudShield: A Real-Time Machine Learning Framework for Fraud Detection in High-Volume Financial Transaction Streams." <span class="venue">Under review, Bridges (FASCON 2026, Lead City University).</span>
+      Code: <a href="https://github.com/mafatayo/fraudshield">github.com/mafatayo/fraudshield</a>
+    </li>
+    <li>
+      "Auditing Feature Reliance for Adversarial Robustness in Real-Time Fraud Detection." <span class="venue">Under review, ICAIF 2026 workshop on Financial AI Security, Privacy, and Safety.</span>
+    </li>
+    <li>
+      "Software Quality Assurance Process: A Consolidated Definition and a Lifecycle-Mapped Taxonomy of Tool Support." <span class="venue">Under review, e-Informatica Software Engineering Journal.</span>
+      Preprint: <a href="https://doi.org/10.5281/zenodo.22341782">Zenodo</a>
+    </li>
+  </ul>
+
+  <footer>Last updated September 2026.</footer>
+</div>
